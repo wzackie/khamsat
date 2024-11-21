@@ -1,0 +1,244 @@
+*{
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+     font-family: "Noto Kufi Arabic", sans-serif;
+}
+:root{
+     --gray:#2222220e;
+     --bu-frist:#dd4b39;
+     --bu-second:#0f4bac;
+     --font-h:#333;
+     --font-p:#555;
+     --hr:linear-gradient(to right, #ccc, #000);
+     --hr-two:linear-gradient(to right, #000, #ccc);
+}
+nav{
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width:100%;
+     height:7vh;
+}
+nav .nav-frist button{
+     margin-left:10px;
+     padding:6px 10px;
+     border: none;
+     border:1px solid var(--font-h);
+     background-color:#fff;
+     font-size:10px;
+}
+nav .nav-frist button:hover{
+    cursor:pointer;
+}
+nav .nav-frist button i{
+     font-size:2px;
+     color:var(--font-h);
+}
+nav .nav-second{
+     margin:30px;
+     margin-right:0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+nav .nav-second i{
+     margin:10px;
+     margin-left:40px;
+     font-size:20px;
+     color:var(--font-h);
+}
+section{
+     background-color:var(--gray);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+section .parent{
+     background-color: #fff;
+     display: flex;
+     width:95%;
+     margin:50px;
+     justify-content: space-between;
+     padding:60px;
+}
+section .parent .left{
+     width:40%;
+     text-align: end;
+}
+section .parent .left .text h3{
+     color:var(--font-p);
+     font-weight: 500;
+     padding:20px;
+     padding-right:0;
+}
+section .parent .left .ads div{
+     direction: rtl;
+     display: flex;
+}
+section .parent .left .ads div div{
+     display: flex;
+     flex-direction: column;
+     direction: ltr;
+     margin:10px;
+}
+section .parent .left .ads div div h2{
+     color: var(--font-h);
+     font-size: 18px;
+     font-weight: 500;
+}
+section .parent .left .ads div div p{
+     color: var(--font-p);
+     font-weight: 300;
+     font-size:10px;
+}
+section .parent .right{
+     width:60%;
+     display: flex;
+     flex-direction: column;
+     direction:rtl;
+}
+section .parent .right .enter .one h2{
+     font-size:28px;
+     font-weight: 500;
+     color:var(--font-h);
+     padding:25px;
+     padding-right:0;
+}
+section .parent .right .enter .two{
+     display: flex;
+     direction: ltr;
+     justify-content: center;
+}
+section .parent .right .enter .two button{
+     margin:10px;
+     width:17rem;
+     font-size:16px;
+     height:3.5rem;
+     border: none;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+section .parent .right .enter .two button:hover{
+     cursor:pointer;
+}
+section .parent .right .enter .two .micro{
+     background-color:var(--bu-second);
+}
+section .parent .right .enter .two .micro i{
+     font-size:30px;
+     padding:10px;
+}
+section .parent .right .enter .two .google{
+     background-color:var(--bu-frist);
+}
+section .parent .right .enter .two .google i{
+     font-size:30px;
+     padding:10px;
+}
+section .parent .right .enter .three{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+section .parent .right .enter .three .le{
+     width:40%;
+     height:1px;
+     background-image: var(--hr-two);
+}
+section .parent .right .enter .three p{
+     padding:15px;
+     font-size:2px;
+     color:var(--font-p);
+}
+section .parent .right .enter .three .ri{
+     width:40%;
+     height:1px;
+     background-image: var(--hr);
+}
+section .parent .right form{
+     background-color: #2222220e;
+     display: flex;
+     flex-direction: column;
+     padding:40px;
+     box-shadow:1px 1px 10px 10px #2222220e;
+}
+section .parent .right form input{
+     height:40px;
+}
+section .parent .right form  span{
+     color: #dd4b39;
+}
+section .parent .right form h6{
+     font-size:5px;
+     font-weight:400;
+     color:var(--font-h);
+     padding:20px;
+     padding-right:0;
+     padding-bottom:10px;
+}
+section .parent .right form .one{
+     display: flex;
+     justify-content: space-between;
+}
+section .parent .right form .one div input{
+     width:90%;
+     font-size:2px;
+}
+section .parent .right form .condition{
+     display: flex;
+     margin:25px;
+     margin-right:0;
+}
+section .parent .right form .condition p{
+     padding-right:10px;
+}
+section .parent .right form .condition p a{
+     color:var(--bu-second);
+     text-decoration: none;
+}
+section .parent .right form .submit{
+     background-color: #2cabe2e8;
+     border: none;
+     color: #fff;
+     width:10vw;
+}
+section .parent .right form .submit:hover{
+     cursor: pointer;
+}
+footer{
+     display: flex;
+     justify-content: center;
+     padding:20px;
+}
+.error{
+     color: #dd4b39;
+     font-size: 10px;
+}
+
+
+@media(max-width:900px){
+     section .parent .left{
+          display: none;
+          position: absolute;
+     }
+     section .parent .right{
+          width:100%;
+     }    
+     section .parent .right form .submit{
+          width:100%;
+     } 
+
+}
+
+
+
+
+
+
+
+
+
